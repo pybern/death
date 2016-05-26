@@ -3,7 +3,6 @@ from scrapy.loader.processors import TakeFirst, MapCompose, Join
  
 
 class DeathItem(Item):
- 
     firstName = Field(
         input_processor=MapCompose(
             unicode.strip),

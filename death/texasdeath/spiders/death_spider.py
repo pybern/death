@@ -1,4 +1,5 @@
 
+
 #removed, items migrated to spider//from death.items import DeathItem
 #items
 from urlparse import urljoin
@@ -35,7 +36,7 @@ class DeathSpider(scrapy.Spider):
  
             if url.endswith(("jpg","no_info_available.html")):
                 loader.add_value('Description',u'')
-                loader.add_value('Education ',u'')
+                loader.add_value('Education',u'')
                 if urlLast.endswith("no_last_statement.html"):
                     loader.add_value('Message',u'')
                     yield loader.load_item()
