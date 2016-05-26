@@ -4,7 +4,7 @@
 from urlparse import urljoin
 import scrapy
 from scrapy.loader import ItemLoader
-from death.items import DeathItem
+from texasdeath.items import DeathItem
 
 class DeathSpider(scrapy.Spider):
     name = "tdeath"
