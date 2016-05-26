@@ -4,6 +4,8 @@ Scrapy script to crawl executed offenders from the Texas Justice Department.
 
 This project also includes esWrapper which transforms the data and uploads it to the ELK stack. 
 
+Run scrapy crawl death -o info.json -t to start crawler and download the data in current directory
+
 
 #scrapy
 
