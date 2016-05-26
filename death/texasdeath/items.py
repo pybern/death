@@ -44,3 +44,11 @@ class DeathItem(Item):
         input_processor=MapCompose(
             unicode.strip),
         output_processor=Join())
+    OILink = Field(
+        input_processor=MapCompose(unicode,
+            unicode.strip),
+        output_processor=Join())
+    OLastStatement = Field(
+        input_processor=MapCompose(unicode,
+            unicode.strip),
+        output_processor=Join())
